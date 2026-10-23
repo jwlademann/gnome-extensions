@@ -1,0 +1,6 @@
+{
+  "uuid": "force-terminal-osk@local",
+  "name": "Force Terminal OSK",
+  "description": "Always use GNOME's extended terminal on-screen keyboard layout.",
+  "shell-version": ["50"]
+}

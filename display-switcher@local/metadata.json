@@ -1,0 +1,7 @@
+{
+  "uuid": "display-switcher@local",
+  "name": "Display Switcher",
+  "description": "Super+P modes from the top bar",
+  "shell-version": ["50"],
+  "session-modes": ["user", "unlock-dialog"]
+}

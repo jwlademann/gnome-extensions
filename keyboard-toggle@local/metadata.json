@@ -1,0 +1,14 @@
+{
+  "description": "Adds a panel button to quickly show/hide the on-screen keyboard. Note: the on-screen keyboard must be enabled in Settings \u2192 Accessibility \u2192 Typing first.",
+  "name": "Keyboard Toggle",
+  "shell-version": [
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50"
+  ],
+  "uuid": "keyboard-toggle@local",
+  "version": 2.1
+}
