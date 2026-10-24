@@ -594,8 +594,11 @@ class Indicator extends PanelMenu.Button {
         const current = currentMode(state);
         for (const [type, label, icon] of modes) {
             const item = this.menu.addAction(label, () => this._switchTo(type), icon);
-            if (type === current)
-                item.setOrnament(PopupMenu.Ornament.DOT);
+            // NONE (rather than the default HIDDEN) reserves the tick's space on the
+            // other entries, so all the labels line up
+            item.setOrnament(type === current
+                ? PopupMenu.Ornament.CHECK
+                : PopupMenu.Ornament.NONE);
             item.setSensitive(state.mons.length > 1);
         }
 
