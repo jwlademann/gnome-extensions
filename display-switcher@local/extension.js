@@ -599,6 +599,9 @@ class Indicator extends PanelMenu.Button {
             item.setOrnament(type === current
                 ? PopupMenu.Ornament.CHECK
                 : PopupMenu.Ornament.NONE);
+            // Entries with an icon put the tick after the label; move it back to the front
+            if (item._ornamentIcon)
+                item.set_child_below_sibling(item._ornamentIcon, null);
             item.setSensitive(state.mons.length > 1);
         }
 
